@@ -1,295 +1,167 @@
 class Swiggy {
-	public static double search(String foodName) {
-		double price = 0.00;
-		if (foodName == "gulabjamun") {
-			price = 30;
+     static double price;
+
+	public static void search(String foodName ){
+	
+		if("Biryani" == foodName){
+		System.out.println("Searched food name is"+foodName);
+		price = 90.00  ;
+		
+		}return price;
+		if("Kabab" == foodName){
+		System.out.println("Searched food name is"+foodName);
+			price = 50.90 ;
 			return price;
 		}
-		if (foodName == "salad") {
-			price = 50;
-			return price;
-		}
-		if (foodName == "sandwich") {
-			price = 50;
-			return price;
-		}
-		if (foodName == "breadmasala") {
-			price = 45;
-			return price;
-		}
-		if (foodName == "litta choka") {
-			price = 100;
-			return price;
-		}
-		if (foodName == "kodi pulao") {
-			price = 100;
-			return price;
-		}
-		if (foodName == "hyderabadiaBirsysni") {
-			price = 200;
-			return price;
-		}
-		if (foodName == "rostedDuck") {
-			price = 400;
-			return price;
-		}
-		if (foodName == "mapuTopu") {
-			price = 200;
-			return price;
-		}
-		if (foodName == "chouMein") {
-			price = 150;
-			return price;
-		}
-		if (foodName == "springRolls") {
-			price = 100;
-			return price;
-		}
-		if (foodName == "wontonSoup") {
-			price = 200;
-			return price;
-		}
-		if (foodName == "chinesHotPots") {
-			price = 300;
-			return price;
-		}
-		if (foodName == "charSiu") {
-			price = 150;
-			return price;
-		}
-		if (foodName == "dumplings") {
-			price = 150;
-			return price;
-		}
-		if (foodName == "fujiya") {
-			price = 200;
-			return price;
-		}
-		if (foodName == "dimSums") {
-			price = 200;
-			return price;
-		}
-		if (foodName == "loMain") {
-			price = 150;
-			return price;
-		}
-		if (foodName == "mooncake") {
-			price = 150;
-			return price;
-		}
-		if (foodName == "hyderabadiaBirsysni") {
-			price = 200;
-			return price;
-		}
-		if (foodName == "rostedDuck") {
-			price = 400;
-			return price;
-		}
-		if (foodName == "mushroomCheeseroll") {
-			price = 160;
-			return price;
-		}
-		if (foodName == "chickenfry") {
-			price = 270;
-			return price;
-		}
-		if (foodName == "chickenfryBiryani") {
-			price = 296;
-			return price;
-		}
-		if (foodName == "chickenPepperDry") {
-			price = 150;
-			return price;
-		}
-		if (foodName == "mapuTopu") {
-			price = 200;
-			return price;
-		}
-		if (foodName == "chouMein") {
-			price = 150;
-			return price;
-		}
-		if (foodName == "sandwich") {
-			price = 50;
-			return price;
-		}
-		if (foodName == "breadmasala") {
-			price = 45;
-			return price;
-		}
-		if (foodName == "litta choka") {
-			price = 100;
-			return price;
-		}
-		if (foodName == "kodi pulao") {
-			price = 100;
-			return price;
-		}
-		if (foodName == "Frenchie") {
-			price = 50;
-			return price;
-		}
-		if (foodName == "breadmasala") {
-			price = 45;
-			return price;
-		}
-		if (foodName == "litta choka") {
-			price = 100;
-			return price;
-		}
-		if (foodName == "kodi pulao") {
-			price = 100;
-			return price;
+		
+	
+		if("Egg omlete" == foodName){
+			System.out.println("Searched food name is"+foodName);
+		   price = 30.00  ;
+		   return price;
 		}
 
+		if("Egg masala" == foodName){
+			System.out.println("Searched food name is"+foodName);
+			price = 80.00  ;
+			return price;
+		}
+		
+		if("Paneer masala" == foodName){
+			System.out.println("Searched food name is"+foodName);
+		    price = 80.00  ;
+			return price;
+		}
+		
+		if("Salad" == foodName){
+			System.out.println("Searched food name is"+foodName);
+			price = 30.00  ;
+			return price;
+		}
+		if("Chiken rice" == foodName){
+			System.out.println("Searched food name is"+foodName);
+			price = 100.00  ;
+			return price;
+		}
+		if("Chicken sambar" == foodName){
+			System.out.println("Searched food name is"+foodName);
+			price = 70.00  ;
+			return price;
+		}
+		
+		if("Fruit Salad" == foodName){
+			System.out.println("Searched food name is"+foodName);
+			price = 30.00 ;
+			return price;
+		}
+		return;
+	
+	}
+		
+		public static void search(String foodName , int quantity ){
+			
+		
+		if("Burrito" == foodName){
+		System.out.println("Searched food name is"+foodName);
+		price = 100.00* quantity;
+	    return price;
+		}
+
+		if("padThai" == foodName){
+			System.out.println("Searched food name is"+foodName);
+			price = 222.00* quantity;
+		 return price;
+			
+		}
+
+		
+		
+		if("Paneer tikka masala" == foodName){
+			System.out.println("Searched food name is"+foodName);
+		    price = 50.00 * quantity;
+			return price;
+		
+		}
+		
+		if("Fried chicken" == foodName){
+			System.out.println("Searched food name is"+foodName);
+			price = 30.00* quantity;
+			return price;
+		}
+		if("caesar salad" == foodName){
+			System.out.println("Searched food name is"+foodName);
+			price = 110.00 * quantity;
+			return price;
+		}
+		
+		
+
+		if("Biryani" == foodName){
+		System.out.println("Searched food name is"+foodName);
+		price = 90.00* quantity;
 		return price;
+		}
+		
+		if("Paneer masala" == foodName){
+			System.out.println("Searched food name is"+foodName);
+		    price = 80.00* quantity;
+			return price;
+		}
+		
+		if("Salad" == foodName){
+			System.out.println("Searched food name is"+foodName);
+			price = 30.00* quantity;
+			return price;
+		}
+		if("Chiken rice" == foodName){
+			System.out.println("Searched food name is"+foodName);
+			price = 100.00* quantity;
+			return price;
+		}
+		if("Chicken sambar" == foodName){
+			System.out.println("Searched food name is"+foodName);
+			price = 70.00* quantity;
+			return price;
+		}
+		
+		if("Fruit Salad" == foodName){
+			System.out.println("Searched food name is"+foodName);
+			price = 30.00* quantity;
+			return price;
+		}
+		
+		if("cheeseburger" == foodName){
+		System.out.println("Searched food name is"+foodName);
+			price = 50.90* quantity;
+			return price;
+		}
+		if("padThai" == foodName){
+			System.out.println("Searched food name is"+foodName);
+			price = 222.00* quantity;
+			return price;
+		}
+
+		if("chicken quessadilla" == foodName){
+			System.out.println("Searched food name is"+foodName);
+			price = 820.00* quantity;
+			return price;
+		}
+		
+		if("Paneer tikka masala" == foodName){
+			System.out.println("Searched food name is"+foodName);
+		    price = 50.00* quantity;
+			return price;
+		}
+		
+
+		if("masala vada" == foodName){
+			System.out.println("Searched food name is"+foodName);
+			price = 70.00* quantity;
+			return price;
+		}
+		return price;
+	
+		
 	}
-
-	public static double search(String foodName, int quantity) {
-
-		double price1 = 0.00;
-		if (foodName == "gulabjamun") {
-			price1 = 30 * quantity;
-			return price1;
-		}
-		if (foodName == "salad") {
-			price1 = 50 * quantity;
-			return price1;
-		}
-		if (foodName == "sandwich") {
-			price1 = 50 * quantity;
-			return price1;
-		}
-		if (foodName == "breadmasala") {
-			price1 = 45 * quantity;
-			return price1;
-		}
-		if (foodName == "litta choka") {
-			price1 = 100 * quantity;
-			return price1;
-		}
-		if (foodName == "kodi pulao") {
-			price1 = 100 * quantity;
-			return price1;
-		}
-		if (foodName == "hyderabadiaBirsysni") {
-			price1 = 200 * quantity;
-			return price1;
-		}
-		if (foodName == "rostedDuck") {
-			price1 = 400 * quantity;
-			return price1;
-		}
-		if (foodName == "mapuTopu") {
-			price1 = 200 * quantity;
-			return price1;
-		}
-		if (foodName == "chouMein") {
-			price1 = 150 * quantity;
-			return price1;
-		}
-		if (foodName == "springRolls") {
-			price1 = 100 * quantity;
-			return price1;
-		}
-		if (foodName == "wontonSoup") {
-			price1 = 200 * quantity;
-			return price1;
-		}
-		if (foodName == "chinesHotPots") {
-			price1 = 300 * quantity;
-			return price1;
-		}
-		if (foodName == "charSiu") {
-			price1 = 150 * quantity;
-			return price1;
-		}
-		if (foodName == "dumplings") {
-			price1 = 150 * quantity;
-			return price1;
-		}
-		if (foodName == "fujiya") {
-			price1 = 200 * quantity;
-			return price1;
-		}
-		if (foodName == "dimSums") {
-			price1 = 200 * quantity;
-			return price1;
-		}
-		if (foodName == "loMain") {
-			price1 = 150 * quantity;
-			return price1;
-		}
-		if (foodName == "mooncake") {
-			price1 = 150 * quantity;
-			return price1;
-		}
-		if (foodName == "hyderabadiaBirsysni") {
-			price1 = 200 * quantity;
-			return price1;
-		}
-		if (foodName == "rostedDuck") {
-			price1 = 400 * quantity;
-			return price1;
-		}
-		if (foodName == "mushroomCheeseroll") {
-			price1 = 160 * quantity;
-			return price1;
-		}
-		if (foodName == "chickenfry") {
-			price1 = 270 * quantity;
-			return price1;
-		}
-		if (foodName == "chickenfryBiryani") {
-			price1 = 296 * quantity;
-			return price1;
-		}
-		if (foodName == "chickenPepperDry") {
-			price1 = 150 * quantity;
-			return price1;
-		}
-		if (foodName == "mapuTopu") {
-			price1 = 200 * quantity;
-			return price1;
-		}
-		if (foodName == "chouMein") {
-			price1 = 150 * quantity;
-			return price1;
-		}
-		if (foodName == "sandwich") {
-			price1 = 50 * quantity;
-			return price1;
-		}
-		if (foodName == "breadmasala") {
-			price1 = 45 * quantity;
-			return price1;
-		}
-		if (foodName == "litta choka") {
-			price1 = 100 * quantity;
-			return price1;
-		}
-		if (foodName == "kodi pulao") {
-			price1 = 100 * quantity;
-			return price1;
-		}
-		if (foodName == "sandwich") {
-			price1 = 50 * quantity;
-			return price1;
-		}
-		if (foodName == "Frenchie") {
-			price1 = 45 * quantity;
-			return price1;
-		}
-		if (foodName == "litta choka") {
-			price1 = 100 * quantity;
-			return price1;
-		}
-		if (foodName == "kodi pulao") {
-			price1 = 100 * quantity;
-			return price1;
-		}
-
-		return price1;
-	}
-
+	
 }
