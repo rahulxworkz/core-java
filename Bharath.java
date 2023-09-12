@@ -1,3 +1,0 @@
-class Bharath extends Country{
-
-}

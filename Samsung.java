@@ -1,3 +1,3 @@
 class Samsung extends Mobile{
-
+	
 }

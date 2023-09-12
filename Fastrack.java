@@ -1,5 +1,3 @@
 class Fastrack extends Watch{
 	
-	
-	
 }

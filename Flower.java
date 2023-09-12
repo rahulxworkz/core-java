@@ -1,7 +1,8 @@
 class Flower{
-
-public void nector(int petals, String color){
-System.out.println("Rose has :"+petals+" petals and "+color);
-}
-
+	public void getFlowers (String[] flower){
+		System.out.println("List of flower");
+		for(int phool=0;phool<flower.length;phool++){
+			System.out.println("The Flowers available are:"+flower[phool]);
+		}
+	}
 }
