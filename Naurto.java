@@ -1,0 +1,2 @@
+class Naurto extends Anime{
+}

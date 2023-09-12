@@ -1,0 +1,3 @@
+class IntelliJ extends IDE{
+
+}
