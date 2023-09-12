@@ -1,3 +1,4 @@
 class Dell extends Laptop{
-	
+
+
 }

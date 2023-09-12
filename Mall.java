@@ -1,8 +1,8 @@
 class Mall{
-	public void getMalls (String[] Mall){
-		System.out.println("List of Mall");
-		for(int arcade=0;arcade<Mall.length;arcade++){
-			System.out.println("The Malls available are:"+Mall[arcade]);
-		}
-	}
+
+public void shop(String big){
+System.out.println("Biggest mall in Banglore is :"+big);
 }
+
+}
+

@@ -1,5 +1,8 @@
 class Planet{
-public void revolve(){
-  System.out.println("revolves around the sun");
+
+public void revolve(String fav){
+System.out.println("Planet example is:"+fav);
 }
+
 }
+
