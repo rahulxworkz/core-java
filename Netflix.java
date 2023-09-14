@@ -1,4 +1,0 @@
-class Netflix extends Ott{
-	    
-	
-}
