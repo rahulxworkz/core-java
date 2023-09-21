@@ -1,20 +1,21 @@
-class SpotifyExe{
-public static void main(String song[]){
-Spotify songName = new Spotify();
-songName.addSongName("Nudisale");
-songName.addSongName("Muddagi Neenu");
-songName.addSongName("Udisuve");
-songName.addSongName("Yenu Helabeku");
-songName.addSongName("Raja Raja");
-songName.addSongName("O kogile Naa");
-songName.addSongName("Nenne tanaka");
-songName.addSongName("Maleye malaye");
-songName.addSongName("Aparanji Chinnavo");
-songName.addSongName("Swathi Muttina Male Haniye");
-songName.addSongName("O kogile Naa");
-songName.addSongName("Bhale Bhale Chandadha");
-songName.addSongName("megha bantu megha");
+class SpotifyExe {
+    public static void main(String[] song) {
+        MySongs spotify = new MySongs();
 
-songName.getSongNames();
-}
+        spotify.addSong("Chaleya");
+        spotify.addSong("Zihaal e Miskin");
+        spotify.addSong("Dil Jhoom");
+        spotify.addSong("Apna Bana Le");
+        spotify.addSong("Udd Jaa Kaale Kaava");
+        spotify.addSong("Guli Mata");
+        spotify.addSong("Yeh Jism");
+        spotify.addSong("Tere Sang Yaara");
+        spotify.addSong("Sapna Jahan");
+        spotify.addSong("Ra Ra Rakkamma");
+        spotify.addSong("Kalalo Kooda");
+
+        spotify.getDisplay();
+        spotify.searchSongName("Ra Ra Rakkamma");
+        spotify.deleteSongName("Ra Ra Rakkamma");
+    }
 }

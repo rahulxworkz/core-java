@@ -1,42 +1,73 @@
 class Hotels{
-String foodNames[] = new String[10];
-int index;
-public boolean addFoodName(String foodName){
-System.out.println("invoked addFoodName()");
-boolean isAdded = false;
-if(index < foodNames.length){
-if(foodName != null){
-	boolean exist = checkIfFoodNameExist(foodName);
-	if(exist== false){
-System.out.println("validation is proper.. proceed to add Food name");
-foodNames[index]= foodName;
-index++;
-isAdded  = true;
-System.out.println(foodName+"is got added successfully!!");
-System.out.println(foodName+" is got added successfully!!");
-}
-else{
-	System.out.println(foodName+" Food name already exist .. please add other");
-}
-}	
-}
-else{
-	System.out.println("Array index out of bound Exception");
-}
-return isAdded;
-}
-public void  getFoodNames(){
+	String menu[]=new String[10];
+	int index;
+	
+	public boolean foodName(String name){
+		boolean isAdded =false;
+		if(menu.length>index  ){
+		if(menu!= null){
+		boolean exists=checkFoodName(name);
+		if(exists==false){
+		menu[index]=name;
+		index ++;
+		isAdded=true;
+		}
+		else{System.out.println(name+"Food name Already Exested");}
+		}
+		}else{
+		System.out.println("Array Index Out Of BoundsException:"+menu.length);
+		}
+		return isAdded;
+	}
+	public boolean checkFoodName(String name){
+		boolean exists=false;
+		for(int index=0;index<menu.length;index++){
+			if(menu[index]==name){
+				exists=true;
+			}
+		}
+		return exists;
+	}
+	public boolean deleteNamesFood(String name){
+		boolean isDeleted =false;
+		String newMenu[]=new String[menu.length-1];
+		int ind=0;
+		for(int index=0;index<menu.length;index++){
+			if(menu[index]!=name){
+				newMenu[ind++]=menu[index];
+				isDeleted=true;
+			}
+		}
+		System.out.println("the deleted Food name: "+name);
+		System.out.println("Updated  of Hotel menu:");
+		for(int index=0;index<newMenu.length;index++){
+			System.out.println(newMenu[index]);
 
-}
+		}
+		return isDeleted;
+	}
 
-public boolean checkIfFoodNameExist(String foodName){
-	System.out.println("Invoked checkIfFoodNameExist");
-	boolean exist = false;
-	for(int index = 0;index < foodNames.length; index++){
-if(foodNames[index] ==  foodName){
-	exist = true;
-}
-}
-return exist;
-}
+	public String searchFoodName(String name){
+		String exists=null;
+
+		for(int index=0;index<menu.length;index++){
+			if(menu[index]==name){
+				exists=menu[index];
+
+			}
+		}
+		System.out.println("The food is available : "+exists);
+		return exists;
+	}
+
+
+	public void getDisplay(){
+		System.out.println("list of Hotel menu:");
+		for(int index=0;index<menu.length;index++){
+			System.out.println(menu[index]);
+			
+		}
+	}
+	
+	
 }

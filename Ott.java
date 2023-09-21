@@ -1,5 +1,5 @@
 class Ott{
-String movieNames[] = new String[5];
+String movieNames[] = new String[7];
 int index;
 public boolean addMovieName(String movieName){
 System.out.println("invoked addMovieName()");
@@ -13,7 +13,7 @@ System.out.println("validation is proper.. proceed to add movie name");
 movieNames[index]= movieName;
 index++;
 isAdded  = true;
-System.out.println(movieNames+"is got added successfully!!");
+
 System.out.println(movieName+" is got added successfully!!");
 }
 else{
@@ -39,5 +39,29 @@ if(movieNames[index] ==  movieName){
 }
 }
 return exist;
+}
+
+    /* public String searchMovieName(String name){
+	for(String value : movieNames){
+		System.out.println("The movie exists"+value);
+		
+	}
+	return searchMovieName;
+}*/
+
+public boolean delete(String name){
+	boolean isDeleted = false;
+	String movieNamesAfterDelete [] = new String[movieNames.length-1];
+	int ind = 0 ;
+	
+	for(int index = 0 ; index<movieNames.length ; index++){
+		if(movieNames[index] != name){
+			movieNamesAfterDelete[ind++] = movieNames[index];
+			isDeleted = true;
+		}
+	}
+	System.out.println(movieNamesAfterDelete);
+	
+	return isDeleted;
 }
 }

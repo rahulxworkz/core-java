@@ -1,18 +1,28 @@
 class HotelsExe{
-public static void main(String food[]){
-Hotels foodName = new Hotels();
-foodName.addFoodName("Tikka Masala");
-foodName.addFoodName("Butter Chicken");
-foodName.addFoodName("Korma");
-foodName.addFoodName("Palav");
-foodName.addFoodName("Malai Kofta");
-foodName.addFoodName("Vindaloo");
-foodName.addFoodName("Rogan Josh");
-foodName.addFoodName("Karaikudi Curry");
-foodName.addFoodName("Hydrabad Biriyani");
-foodName.addFoodName("Kulcha");
-foodName.addFoodName("Palav");
-foodName.addFoodName("Mashroom Froed Rice");
-foodName.getFoodNames();
-}
+
+	public static void main(String[] ottp){
+
+	Hotels	hotel=new Hotels();
+//	TajHotel	hotel=new TajHotel();
+	hotel.foodName("Bisi Bele Bath");
+	hotel.foodName("Neer Dosa");
+	hotel.foodName("Ragi Mudde");
+  
+	hotel.foodName("Jolada Roti");
+	hotel.foodName("Butter Chicken");
+	hotel.foodName("Biryani");
+	//hotel.foodName("Chicken Biryani");
+	//hotel.foodName("Chicken");
+	hotel.foodName("Bisi Bele Bath");
+	//hotel.foodName("Chai");
+
+	//hotel.foodName("Bisi Bele Bath");
+	hotel.foodName("Chai");	
+	hotel.getDisplay();
+
+	hotel.searchFoodName("Chai");
+
+	hotel.deleteNamesFood("Chai");
+
+	}
 }

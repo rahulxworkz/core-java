@@ -1,44 +1,82 @@
-class Spotify{
-String songNames[] = new String[11];
-int index;
-public boolean addSongName(String songName){
-System.out.println("invoked addSongName()");
-boolean isAdded = false;
-if(index < songNames.length){
-if(songName != null){
-	boolean exist = checkIfSongNameExist(songName);
-	if(exist == false){
-System.out.println("validation is proper.. proceed to add song name");
-songNames[index]= songName;
-index++;
-isAdded  = true;
-System.out.println(songName +"is got added successfully!!");
-System.out.println(songName +" is got added successfully!!");
-}
-else{
-	System.out.println(songName+" Song name already exist .. please add other");
-}
-}
-}
-else {
-System.out.println("Array index out of bound Exception");
-}
+class Spotify {
+    String songNames[] = new String[11];
+    int index;
 
-return isAdded;
-}
+    public boolean addSong(String name) {
+        boolean isAdded = false;
 
-public void  getSongNames(){
+        if (songNames.length > index) {
+            if (songNames != null) {
+                boolean exists = checkSongName(name);
+                if (!exists) {
+                    songNames[index] = name;
+                    index++;
+                    isAdded = true;
+                } else {
+                    System.out.println(name + " Song already added");
+                }
+            }
+        } else {
+            System.out.println("Array Index Out Of BoundsException:" + songNames.length);
+        }
 
-}
+        return isAdded;
+    }
 
-public boolean checkIfSongNameExist(String songName){
-	System.out.println("Invoked checkIfFoodNameExist");
-	boolean exist = false;
-	for(int index = 0;index < songNames.length; index++){
-    if(songNames[index] ==  songName){
-	exist = true;
-}
-}
-return exist;
-}
+    public boolean checkSongName(String name) {
+        boolean exists = false;
+        for (int index = 0; index < songNames.length; index++) {
+            if (songNames[index] ==name) {
+                exists = true;
+                break;
+            }
+        }
+        return exists;
+    }
+
+    public boolean deleteSongName(String name) {
+        boolean isDeleted = false;
+        String newPlayerNames[] = new String[songNames.length - 1];
+        int ind = 0;
+
+        for (int index = 0; index < songNames.length; index++) {
+            if (!songNames[index].equals(name)) {
+                newPlayerNames[ind++] = songNames[index];
+                isDeleted = true;
+            }
+        }
+
+
+        System.out.println("the deleted Song name:" + name);
+        System.out.println("Updated list of Playlist:");
+        for (int index = 0; index < newPlayerNames.length; index++) {
+            System.out.println(newPlayerNames[index]);
+        }
+
+        return isDeleted;
+    }
+
+    public String searchSongName(String name) {
+        String exists = null;
+
+        for (int index = 0; index < songNames.length; index++) {
+            if (songNames[index] != null) {
+                exists = songNames[index];
+                break;
+            }
+        }
+
+        System.out.println("Song name is in the playlist: " + exists);
+
+        return exists;
+    }
+
+    public void getDisplay() {
+        System.out.println("List of Songs:");
+        for (int index = 0; index < songNames.length; index++) {
+            if (songNames[index] != null) {
+                System.out.println(songNames[index]);
+            }
+        }
+    }
 }

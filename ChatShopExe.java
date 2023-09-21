@@ -1,18 +1,25 @@
 class ChatShopExe{
-public static void main(String chat[]){
-ChatShop chatName = new ChatShop();
-chatName.addChatName("Pani Poori");
-chatName.addChatName("Masala Poori");
-chatName.addChatName("Dahi Poori");
-chatName.addChatName("Bhel Poori");
-chatName.addChatName("Aloo CHat");
-chatName.addChatName("Sev Puri");
-chatName.addChatName("Aloo tikki");
-chatName.addChatName("Dahi vada");
-chatName.addChatName("Gobi");
-chatName.addChatName("Samosa Chat");
-chatName.addChatName("Gobi");
-chatName.addChatName("Momos");
-chatName.getChatNames();
-}
+
+	public static void main(String[] args){
+
+		ChatShop chat=new ChatShop();
+		//PaniPuri chat=new PaniPuri();
+		chat.addChatName("Pani puri");
+		chat.addChatName("Masala puri");
+		chat.addChatName("Masala Cheese Pori");
+		chat.addChatName("Puff");
+		chat.addChatName("Masala Pav Bhaji");
+		chat.addChatName("Pani puri");
+		//chat.addChatName("Vada Pav");
+		chat.addChatName("Vada Pav");
+		//chat.addChatName("katore chat");
+
+		chat.getDisplay();
+
+		String a=chat.search("Bheal pori");
+		//System.out.println("Chat name is in chat Shop "+a);
+		chat.deleteNames("Puff");
+
+
+	}
 }

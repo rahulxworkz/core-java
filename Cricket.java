@@ -1,46 +1,78 @@
-class Cricket
-{
-String playerNames[] = new String[11];
-int index;
+class Cricket{
 
-public boolean addPlayerName(String playerName){
-System.out.println("invoked addFoodName()");
-boolean isAdded = false;
+	String teamName[]=new String[11];
+	int index;
+	String newPlayerName[];
 
-if(index <  playerNames.length){
-
-if(playerName != null){
-	boolean exist = checkIfPlayerNameExist(playerName);
-	if(exist == false){
-System.out.println("validation is proper.. proceed to add Player name");
-playerNames[index]= playerName;
-index++;
-isAdded  = true;
-System.out.println(playerName+"is got added successfully!!");
-System.out.println(playerName+" is got added successfully!!");
-}
-else{
-	System.out.println(playerName+" Player name already exist .. please add other");
-}
-}
-}
-else {
-System.out.println("Array index out of bound Exception");
-}
-
-return isAdded;
-}
-public void  getplayerNames(){
 	
-}
-public boolean checkIfPlayerNameExist(String playerName){
-	System.out.println("Invoked checkIfPlayerNameExist");
-	boolean exist = false;
-	for(int index = 0;index < playerNames.length; index++){
-if(playerNames[index] ==  playerName){
-	exist = true;
-}
-}
-return exist;
-}
+
+    public boolean playerNames(String name){
+		
+		return isAdded;
+	}
+	public boolean deletePlayerName(String name){
+		boolean isDelete= false;
+		int sam=0;
+		int ind=0;
+		for(int index=0;index< teamName.length;index++){
+			if(teamName[index]!=name){
+				sam++;
+			}
+		}
+		newPlayerName=new String[sam];
+		for(int index=0;index< teamName.length;index++){
+			if(teamName[index]!=name){
+				newPlayerName[ind++]=teamName[index];
+				isDelete=true;
+
+			}
+		}
+		System.out.println(name+" player is removed from the team ");
+		return isDelete;
+
+	}
+	public void getNewDisplay(){
+		System.out.println("list of new Team Memebers:");
+		for(int index=0;index< newPlayerName.length;index++){
+			System.out.println(newPlayerName[index]);
+
+		}
+
+	}
+
+	public boolean checkPlayerNames(String name){
+		boolean exists=false;
+		for(int index=0;index<teamName.length;index++){
+	boolean exists=false;
+	for(int index=0;index<teamName.length;index++){
+		if(teamName[index]==name){
+			exists=true;
+		}
+	}
+		return exists;
+	}
+	}
+	public String SearchingPlayer(String name){
+		String exits=null;
+		for(int index=0;index< teamName.length;index++){
+			if(teamName[index]==name){
+				exists=true;
+				exits=teamName[index];
+			}
+		}
+		return exists;
+		System.out.println("Play names exits : "+exits);
+		return exits;
+	}
+
+	public void getDisplay(){
+		System.out.println("list of Team Memebers:");
+		for(int index=0;index< teamName.length;index++){
+			System.out.println(teamName[index]);
+			
+		}
+		
+	}
+	
+	
 }

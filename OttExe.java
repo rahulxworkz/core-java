@@ -1,13 +1,15 @@
 class OttExe{
 public static void main(String ott[]){
-Ott platform = new Ott();
-platform.addMovieName("Priya Saki");
-platform.addMovieName("Anna Tangi");
-platform.addMovieName("Halli Mestru");
-platform.addMovieName("Mr and Miss Ramachari");
-platform.addMovieName("Hudugaru");
-platform.addMovieName("Anna Tangi");
-platform.addMovieName("Bhale Bhale Chennada");
+HotStar platform = new HotStar();
+platform.addMovieName("KGF");
+platform.addMovieName("Jailer");
+platform.addMovieName("Hebbuli");
+platform.addMovieName("Vishnuvardhana");
+platform.addMovieName("Ghost");
+platform.addMovieName("Hebbuli");
+platform.addMovieName("Rajkumara");
 platform.getMovieNames();
+
+platform.delete("Ghost");
 }
 }

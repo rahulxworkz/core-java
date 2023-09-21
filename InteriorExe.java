@@ -1,20 +1,24 @@
 class InteriorExe{
-public static void main(String song[]){
-Interior materialName = new Interior();
-materialName.addMaterialName("Wood");
-materialName.addMaterialName("Glass");
-materialName.addMaterialName("Marble");
-materialName.addMaterialName("Tile");
-materialName.addMaterialName("Textile");
-materialName.addMaterialName("Concrete");
-materialName.addMaterialName("kallu");
-materialName.addMaterialName("Metal");
-materialName.addMaterialName("Ceramic");
-materialName.addMaterialName("Ply");
-materialName.addMaterialName("kallu");
-materialName.addMaterialName("Plastic");
-materialName.addMaterialName("marble");
+	public static void main(String[] inte){
+	Interior materal=new Interior();
+	materal.addMeterialNames("Granite");
+	materal.addMeterialNames("Wood");
+	materal.addMeterialNames("Copper");
+	materal.addMeterialNames("Fabrics");
+	materal.addMeterialNames("Renewable materials");
+	materal.addMeterialNames("Tile");
+	materal.addMeterialNames("Synthetic materials");
+	//materal.addMeterialNames("Fevicol");
+	materal.addMeterialNames("Fevicol");
+	//materal.addMeterialNames("Mattress");
+	materal.addMeterialNames("Light");
+	materal.addMeterialNames("pipes");
+	materal.addMeterialNames("pipes");
+	//materal.addMeterialNames("pipes");
 
-materialName.getMaterialNames();
-}
+	materal.getDisplay();
+	materal.searchMeterialName("Copper");
+	materal.deleteMeterialNames("Copper");
+
+	}
 }

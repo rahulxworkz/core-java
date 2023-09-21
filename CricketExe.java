@@ -1,20 +1,28 @@
 class CricketExe{
-public static void main(String team[]){
-Cricket playerName = new Cricket();
-playerName.addPlayerName("Virat Kohli");
-playerName.addPlayerName("Faf Du Plessis");
-playerName.addPlayerName("Wanindu Hasaranga");
-playerName.addPlayerName("Glenn Maxwell");
-playerName.addPlayerName("Mohammed siraj");
-playerName.addPlayerName("Rajat Patidar");
-playerName.addPlayerName("Dinesh Karthik");
-playerName.addPlayerName("Will Jacks");
-playerName.addPlayerName("Rajat Patidar");
-playerName.addPlayerName("Harshal Patel");
-playerName.addPlayerName("Michael Bracewell");
-playerName.addPlayerName("shahbaz Ahmed");
-playerName.addPlayerName("Doni");
+	public static void main(String[] team){
+	Cricket	cricket=new  Cricket();
+//	IndianTeam	cricket=new  IndianTeam();
 
-playerName.getplayerNames();
-}
+	cricket.playerNames("Rohit Sharma (c)");
+	cricket.playerNames("Hardik Pandya (vc)");
+	cricket.playerNames("Shubman Gill");
+	cricket.playerNames("Virat Kohli");
+	cricket.playerNames("Virat Kohli");
+	//cricket.playerNames("Virat Kohli");
+	cricket.playerNames("KL Rahul");
+	cricket.playerNames("Ravindra Jadeja");
+	cricket.playerNames("Shardul Thakur");
+	cricket.playerNames("Jasprit Bumrah");
+	cricket.playerNames("Mohammed Siraj");
+	cricket.playerNames("Kuldeep Yadav");
+	//cricket.playerNames("Ishan Kishan");
+	cricket.playerNames("Ishan Kishan");
+	//cricket.playerNames("chala");
+
+	cricket.getDisplay();
+	cricket.SearchingPlayer("Ishan Kishan");
+	cricket.deletePlayerName("Ishan Kishan");
+	cricket.getNewDisplay();
+
+	}
 }
