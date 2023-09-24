@@ -1,3 +1,0 @@
-class PaniPuri extends ChatShop{
-
-}

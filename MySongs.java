@@ -1,3 +1,0 @@
-class MySongs extends Spotify{
-
-}

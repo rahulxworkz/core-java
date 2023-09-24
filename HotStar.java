@@ -1,3 +1,0 @@
-class HotStar extends Ott{
-
-}
