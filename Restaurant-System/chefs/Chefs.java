@@ -1,4 +1,4 @@
-package com.upura.station.officer;
+package com.upura.restaurant.chefs;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,12 +9,15 @@ import lombok.Setter;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Officer {
+
+public class Chefs {
 
     private int id;
     private String name;
-    private String postName;
-    private String address;
-    private String bloodGroup;
+    private String chefType;
+    private String specialist;
     private int age;
+    private String address;
+    private String gender;
+
 }
